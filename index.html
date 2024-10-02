@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Baby Dance</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom styles for the accordion */
+    .accordion-button {
+      border-radius: 8px;
+    }
+
+    /* Change the background color when the accordion is active */
+    .accordion-button:not(.collapsed) {
+      background-color: #B3A6FFFF;
+      color: white;
+    }
+
+    /* Make the accordion items more visually appealing with rounded corners */
+    .accordion-item {
+      border-radius: 8px;
+      overflow: hidden; /* Ensure rounded corners are maintained */
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+    }
+
+    /* Rounded corners for the accordion header */
+    .accordion-header {
+      border-radius: 8px;
+    }
+
+    /* Ensure the accordion body also has rounded corners */
+    .accordion-body {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+  </style>
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center light-background">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:babydancemoldova@mail.ru">babydancemoldova@mail.ru</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span onclick="window.location.href='tel:+37360838093'">+(373)60-83-80-93</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+<!--          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>-->
+          <a href="https://www.facebook.com/profile.php?id=61550672456067&mibextid=LQQJ4d" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/babydancemoldova?igsh=MWVzZnV2amh0dHRvaA%3D%3D&utm_source=qr" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.tiktok.com/@babydancemoldova?_t=8q1Kyb9G8A9&_r=1" class="linkedin"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+<!--      <img src="assets/img/IMG_0174.png" alt="">-->
+         <h1 class="sitename"  style="font-family: 'Montserrat', sans-serif;
+            font-weight: 1000;
+            background-image: linear-gradient(45deg, #9e52f3, #a3c7ff);
+            -webkit-background-clip: text;
+            color: transparent;">
+           Baby Dance
+         </h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active">Home<br></a></li>
+            <li><a href="about.html">Despre Noi</a></li>
+            <li><a href="portfolio.html">Portofoliu</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+          <div class="container">
+            <h2>Revino în formă cu Baby Dance!</h2>
+            <p>Un program unic de dans și fitness dedicat mămicilor și bebelușilor. Bucură-te de mișcare alături de cel mic într-un mediu sigur și prietenos!</p>
+            <a href="#featured-services" class="btn-get-started">Începe acum</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+          <div class="container">
+            <h2>Fii o mamă activă și sănătoasă!</h2>
+            <p>Participă la sesiuni de fitness special concepute pentru mamele după naștere, în timp ce copilul tău se bucură de o experiență confortabilă și plăcută.</p>
+            <a href="#featured-services" class="btn-get-started">Înscrie-te acum</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
+          <div class="container">
+            <h2>Dansuri și Fitness cu bebelușul tău!</h2>
+            <p>Transformă timpul petrecut împreună cu bebelușul tău într-o oportunitate de a-ți sculpta corpul și de a te simți fantastic!</p>
+            <a href="#featured-services" class="btn-get-started">Află mai multe</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3>Baby Dance - Dansuri și Fitness cu Bebeluși pentru Mămici după Naștere</h3>
+            <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="Baby Dance Program">
+            <p>Baby Dance este locul ideal pentru mamele care doresc să-și recâștige forma fizică după naștere, într-un mod sigur și distractiv, împreună cu bebelușii lor. Programul nostru este gândit special pentru a te ajuta să te reîntorci în formă, chiar dacă nu ai mai făcut sport până acum.</p>
+            <p>Vârsta recomandată pentru bebeluși este de la 2 luni până la un an, sau mai mult, dar până la 12 kg. Dacă bebelușul tău este mai mare, poți aduce jucării la antrenamente.</p>
+            <p>Este absolut sigur pentru bebeluși, datorită poziției ergonomice (M-position) în timpul purtării, ceea ce asigură cea mai fiziologică poziție pentru dezvoltarea coloanei vertebrale a celor mici.</p>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Acest program te ajută să îți îmbunătățești condiția fizică, să pierzi în greutate și să îți tonifiezi mușchii, totul într-o atmosferă prietenoasă și relaxată, alături de alte mame.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Antrenamente permise după 2 luni de la naștere naturală și după 6 luni de la cezariană (sau cu acordul medicului ginecolog după 4-5 luni).</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Programul include lecții de dans și fitness.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Suport personalizat din partea antrenorului și acces la un chat gratuit cu nutriționistul nostru.</span></li>
+              </ul>
+              <p>
+                Nu rata ocazia să te reîntorci în formă și să îți cunoști potențialul maxim! Apasă pe butonul de mai jos pentru a te înscrie în programul nostru.
+              </p>
+
+              <div class="position-relative mt-4">
+                <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="Mom and Baby Fitness">
+                <a href="https://www.youtube.com/watch?v=gqj-93nTOiU" class="glightbox pulsating-play-btn"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Fitness</h2>
+        <h4>Ești așteptată la noi dacă ai dori:</h4>
+      </div><!-- End Section Title -->
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+
+              <a href="#" class="stretched-link">
+                <h3>Întărirea mușchilor fesieri</h3>
+              </a>
+              <p>
+                Program dedicat pentru tonifierea și fortificarea mușchilor fesieri, îmbunătățind forma și puterea acestora.
+                </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+
+              <a href="#" class="stretched-link">
+                <h3> Strângerea abdomenului</h3>
+              </a>
+              <p> Exerciții și tehnici pentru tonifierea mușchilor abdominali, contribuind la o postură mai bună și un abdomen ferm.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+
+              <a href="#" class="stretched-link">
+                <h3>Restabilirea sensibilității si rezistenței organelor pelvisului</h3>
+              </a>
+              <p>Exerciții specializate pentru refacerea sensibilității și întărirea mușchilor pelvieni, esențiale pentru sănătatea generală a zonei pelviene..</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+
+              <a href="#" class="stretched-link">
+                <h3>Prevenirea și tratarea prolapsului organelor pelvine</h3>
+              </a>
+              <p>Exerciții preventive și  antrenamentul prolapsului organelor pelvine, menite să mențină sănătatea și funcționalitatea acestei zone.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+
+              <a href="#" class="stretched-link">
+                <h3>Menținerea sănătății sexuale</h3>
+              </a>
+              <p>Programe dedicate pentru îmbunătățirea și menținerea sănătății sexuale, cu focus pe întărirea mușchilor pelvieni și echilibrul hormonal.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+
+              <a href="#" class="stretched-link">
+                <h3>Activăm mușchii după naștere</h3>
+              </a>
+              <p>Exerciții de recuperare postnatală pentru activarea și întărirea mușchilor slăbiți în urma sarcinii și nașterii.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+      <section id="faq" class="faq section">
+
+        <div class="container">
+          <h2>Întrebări Frecvente despre Baby Dance</h2>
+
+          <!-- Fitness Section -->
+          <div class="accordion" id="fitnessAccordion">
+            <h3>Fitness</h3>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="fitnessQ1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fitnessA1" aria-expanded="true" aria-controls="fitnessA1">
+                  Ce include programul de fitness?
+                </button>
+              </h2>
+              <div id="fitnessA1" class="accordion-collapse collapse show" aria-labelledby="fitnessQ1" data-bs-parent="#fitnessAccordion">
+                <div class="accordion-body">
+                  Programul de fitness include exerciții pentru întărirea mușchilor fesieri, abdomenului și pelvisului. De asemenea, ajută la restabilirea posturii și la prevenirea prolapsului organelor pelviene.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="fitnessQ2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fitnessA2" aria-expanded="false" aria-controls="fitnessA2">
+                  Este sigur să fac fitness cu bebelușul în sistemul de purtare?
+                </button>
+              </h2>
+              <div id="fitnessA2" class="accordion-collapse collapse" aria-labelledby="fitnessQ2" data-bs-parent="#fitnessAccordion">
+                <div class="accordion-body">
+                  Da, este absolut sigur. Bebelușul este poziționat ergonomic în "M-position", cea mai fiziologică poziție pentru coloana vertebrală a bebelușilor.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="fitnessQ3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fitnessA3" aria-expanded="false" aria-controls="fitnessA3">
+                  Ce trebuie să aduc la antrenamentele de fitness?
+                </button>
+              </h2>
+              <div id="fitnessA3" class="accordion-collapse collapse" aria-labelledby="fitnessQ3" data-bs-parent="#fitnessAccordion">
+                <div class="accordion-body">
+                  Ai nevoie de un sistem de purtare pentru bebeluș (dacă nu ai, ți-l oferim noi), un covoraș de yoga, apă pentru tine și bebeluș, și îmbrăcăminte sportivă confortabilă.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section><!-- /Services Section -->
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Dansuri</h2>
+          <h4>Ești binevenită la Baby Dance dacă vrei să:</h4>
+        </div><!-- End Section Title -->
+        <div class="container">
+
+          <div class="row gy-4">
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Învățăm baza coregrafiei de la zero</h3>
+                </a>
+                <p>
+                  Programul oferă coregrafie de bază, perfect pentru mamele care doresc să învețe să danseze și să se exprime prin mișcare de la început.
+                </p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Învățăm să fim feminine</h3>
+                </a>
+                <p>
+                  Dansul este axat pe dezvoltarea feminității, ajutându-te să te simți grațioasă și încrezătoare în propriul corp.
+                </p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Învățăm să mergem corect și frumos</h3>
+                </a>
+                <p>
+                  Lecțiile noastre de dans includ tehnici de mers corect și elegant, care îți vor îmbunătăți postura și prezența.
+                </p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Învățăm să radiem energie</h3>
+                </a>
+                <p>
+                  Prin dans, învățăm cum să eliberăm energia și să transmitem o stare de bine, devenind mai pline de vitalitate în viața de zi cu zi.
+                </p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-item position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Ne odihnim de viața cotidiană</h3>
+                </a>
+                <p>
+                  Oferim un spațiu de relaxare și recreere pentru mame, un refugiu de la rutina zilnică, unde poți să-ți încarci bateriile și să socializezi.
+                </p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-item position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Programe de slăbit și conversații cu nutriționistul</h3>
+                </a>
+                <p>
+                  Pe lângă dans, oferim acces la consultații gratuite cu un nutriționist profesionist și programe personalizate de slăbit pentru mame.
+                </p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+              <div class="service-item position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Participarea la ședințe foto și evenimente speciale</h3>
+                </a>
+                <p>
+                  Un bonus special al programului este posibilitatea de a participa la ședințe foto profesioniste și, pentru cele mai curajoase, oportunitatea de a urca pe scenă!
+                </p>
+              </div>
+            </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+              <div class="service-item position-relative">
+                <a href="#" class="stretched-link">
+                  <h3>Îmbunătățim coordonarea și echilibrul</h3>
+                </a>
+                <p>
+                  Dansul nu doar că îți oferă o modalitate de a te exprima, dar contribuie și la îmbunătățirea coordonării și echilibrului prin mișcări ritmice și coreografii elegante.
+                </p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+              <div class="service-item position-relative">
+                <a href="#" class="stretched-link">
+                  <h3>Conectăm mamele prin dans</h3>
+                </a>
+                <p>
+                  Oferim un mediu social plăcut unde mamele pot dansa împreună, împărtășind experiențe și creând legături, astfel aducând un plus de energie și bucurie în viețile lor.
+                </p>
+              </div>
+            </div><!-- End Service Item -->
+
+          </div>
+
+        </div>
+      </section><!-- /Services Section -->
+
+      <!-- FAQ Section -->
+      <section id="faq" class="faq section">
+
+        <div class="container">
+          <h2>Întrebări Frecvente despre Dansuri</h2>
+
+          <!-- Dances Section -->
+          <div class="accordion" id="dancesAccordion">
+            <h3>Dansuri</h3>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="dancesQ1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#dancesA1" aria-expanded="true" aria-controls="dancesA1">
+                  Ce stiluri de dans învățăm la Baby Dance?
+                </button>
+              </h2>
+              <div id="dancesA1" class="accordion-collapse collapse show" aria-labelledby="dancesQ1" data-bs-parent="#dancesAccordion">
+                <div class="accordion-body">
+                  La Baby Dance învățăm coregrafie de bază de la zero, cu accent pe feminitate și grație în mișcări. Vom învăța să radiem energie și să ne relaxăm de rutina zilnică.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="dancesQ2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dancesA2" aria-expanded="false" aria-controls="dancesA2">
+                  Am nevoie de experiență anterioară în dans?
+                </button>
+              </h2>
+              <div id="dancesA2" class="accordion-collapse collapse" aria-labelledby="dancesQ2" data-bs-parent="#dancesAccordion">
+                <div class="accordion-body">
+                  Nu, nu este necesară experiență anterioară. Cursurile noastre sunt concepute astfel încât orice mamă, indiferent de nivelul de pregătire, să poată învăța și să se bucure de dans.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="dancesQ3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dancesA3" aria-expanded="false" aria-controls="dancesA3">
+                  Cum mă ajută dansurile în viața de zi cu zi?
+                </button>
+              </h2>
+              <div id="dancesA3" class="accordion-collapse collapse" aria-labelledby="dancesQ3" data-bs-parent="#dancesAccordion">
+                <div class="accordion-body">
+                  Dansurile te ajută să devii mai grațioasă, să ai o postură mai bună și să te simți mai încrezătoare. În plus, este un mod excelent de a te relaxa și de a-ți încărca bateriile.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section><!-- /FAQ Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <a href="assets/img/portfolio/app-1.JPG" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <a href="assets/img/portfolio/product-1.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <a href="assets/img/portfolio/branding-1.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <a href="assets/img/portfolio/books-1.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <a href="assets/img/portfolio/app-2.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/product-2.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <a href="assets/img/portfolio/branding-2.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <a href="assets/img/portfolio/books-2.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <a href="assets/img/portfolio/app-3.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <a href="assets/img/portfolio/product-3.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <a href="assets/img/portfolio/branding-3.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <a href="assets/img/portfolio/books-3.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+<!--    &lt;!&ndash; Clients Section &ndash;&gt;-->
+<!--    <section id="clients" class="clients section">-->
+
+<!--      <div class="container" data-aos="fade-up" data-aos-delay="100">-->
+
+<!--        <div class="row g-0 clients-wrap">-->
+
+<!--          <div class="col-xl-3 col-md-4 client-logo">-->
+<!--            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">-->
+<!--          </div>&lt;!&ndash; End Client Item &ndash;&gt;-->
+
+<!--          <div class="col-xl-3 col-md-4 client-logo">-->
+<!--            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">-->
+<!--          </div>&lt;!&ndash; End Client Item &ndash;&gt;-->
+
+<!--          <div class="col-xl-3 col-md-4 client-logo">-->
+<!--            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">-->
+<!--          </div>&lt;!&ndash; End Client Item &ndash;&gt;-->
+
+<!--          <div class="col-xl-3 col-md-4 client-logo">-->
+<!--            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">-->
+<!--          </div>&lt;!&ndash; End Client Item &ndash;&gt;-->
+
+<!--          <div class="col-xl-3 col-md-4 client-logo">-->
+<!--            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">-->
+<!--          </div>&lt;!&ndash; End Client Item &ndash;&gt;-->
+
+<!--          <div class="col-xl-3 col-md-4 client-logo">-->
+<!--            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">-->
+<!--          </div>&lt;!&ndash; End Client Item &ndash;&gt;-->
+
+<!--          <div class="col-xl-3 col-md-4 client-logo">-->
+<!--            <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">-->
+<!--          </div>&lt;!&ndash; End Client Item &ndash;&gt;-->
+
+<!--          <div class="col-xl-3 col-md-4 client-logo">-->
+<!--            <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">-->
+<!--          </div>&lt;!&ndash; End Client Item &ndash;&gt;-->
+
+<!--        </div>-->
+
+<!--      </div>-->
+
+<!--    </section>&lt;!&ndash; /Clients Section &ndash;&gt;-->
+    <section id="" class="faq section">
+
+      <div class="container">
+
+
+
+        <!-- Dances Section -->
+        <div class="accordion mt-4" id="dancesAccordion">
+          <h3>Dansuri</h3>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="dancesQ1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#dancesA1" aria-expanded="true" aria-controls="dancesA1">
+                Ce stiluri de dans învățăm la Baby Dance?
+              </button>
+            </h2>
+            <div id="dancesA1" class="accordion-collapse collapse show" aria-labelledby="dancesQ1" data-bs-parent="#dancesAccordion">
+              <div class="accordion-body">
+                La Baby Dance învățăm coregrafie de bază de la zero, cu accent pe feminitate și grație în mișcări. Vom învăța să radiem energie și să ne relaxăm de rutina zilnică.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="dancesQ2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dancesA2" aria-expanded="false" aria-controls="dancesA2">
+                Am nevoie de experiență anterioară în dans?
+              </button>
+            </h2>
+            <div id="dancesA2" class="accordion-collapse collapse" aria-labelledby="dancesQ2" data-bs-parent="#dancesAccordion">
+              <div class="accordion-body">
+                Nu, nu este necesară experiență anterioară. Cursurile noastre sunt concepute astfel încât orice mamă, indiferent de nivelul de pregătire, să poată învăța și să se bucure de dans.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="dancesQ3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dancesA3" aria-expanded="false" aria-controls="dancesA3">
+                Cum mă ajută dansurile în viața de zi cu zi?
+              </button>
+            </h2>
+            <div id="dancesA3" class="accordion-collapse collapse" aria-labelledby="dancesQ3" data-bs-parent="#dancesAccordion">
+              <div class="accordion-body">
+                Dansurile te ajută să devii mai grațioasă, să ai o postură mai bună și să te simți mai încrezătoare. În plus, este un mod excelent de a te relaxa și de a-ți încărca bateriile.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <iframe src="https://koalendar.com/e/zapishis-na-trenirovki?embed=true" width="100%" height="800px" frameborder="0"></iframe>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Business Information -->
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">BabyDance Moldova</span>
+            </a>
+            <div class="footer-contact pt-3">
+
+              <p class="mt-3"><strong>Telefon:</strong> <span onclick="window.location.href='tel:+37360838093'">+(373)60-83-80-93</span></p>
+              <p><strong>Email:</strong> <span>babydancemoldova@mail.ru</span></p>
+            </div>
+          </div>
+
+          <!-- Useful Links -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Link-uri Utile</h4>
+            <ul>
+              <li><a href="#">Acasă</a></li>
+              <li><a href="#">Despre Noi</a></li>
+              <li><a href="#">Servicii</a></li>
+              <li><a href="#">Termeni și condiții</a></li>
+              <li><a href="#">Politica de confidențialitate</a></li>
+            </ul>
+          </div>
+
+          <!-- Our Services -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Serviciile Noastre</h4>
+            <ul>
+              <li><a href="#">Clase de Dans pentru Mămici și Bebeluși</a></li>
+              <li><a href="#">Sesiuni de Fitness Postnatal</a></li>
+              <li><a href="#">Consultanță Nutrițională</a></li>
+              <li><a href="#">Ședințe foto personalizate</a></li>
+              <li><a href="#">Antrenori Personali</a></li>
+            </ul>
+          </div>
+
+          <!-- Social Media and Extras -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Comunitatea Noastră</h4>
+            <ul>
+              <li><a href="#">Alătură-te Comunității</a></li>
+              <li><a href="#">Testimoniale Mămici</a></li>
+              <li><a href="#">Galerie Foto</a></li>
+              <li><a href="#">Evenimente și Workshop-uri</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Follow Us -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Urmărește-ne</h4>
+            <ul>
+              <li><a href="https://www.facebook.com/profile.php?id=61550672456067&mibextid=LQQJ4d">Facebook</a></li>
+              <li><a href="https://www.instagram.com/babydancemoldova?igsh=MWVzZnV2amh0dHRvaA%3D%3D&utm_source=qr">Instagram</a></li>
+              <li><a href="https://www.tiktok.com/@babydancemoldova?_t=8q1Kyb9G8A9&_r=1">TikTok</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>
+            © Copyright <strong><span>BabyDance Moldova</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- You can add credits or extra notes here -->
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="https://www.facebook.com/profile.php?id=61550672456067&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/babydancemoldova?igsh=MWVzZnV2amh0dHRvaA%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.tiktok.com/@babydancemoldova?_t=8q1Kyb9G8A9&_r=1"><i class="bi bi-tiktok"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
