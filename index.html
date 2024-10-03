@@ -28,7 +28,7 @@
 
       /* Button Styling */
     .btn-get-started-1 {
-      background-color: #B3A6FF;
+      background-color: #ca60da;
       color: white;
       padding: 10px 20px;
       border-radius: 5px;
@@ -82,6 +82,15 @@
       border-bottom-left-radius: 8px;
       border-bottom-right-radius: 8px;
     }
+      /* Add custom styles for the carousel */
+      .carousel-item {
+        text-align: center;
+      }
+
+      .carousel-item iframe {
+        width: 70%;
+        height: 600px; /* Adjust height as needed */
+      }
 
   </style>
   <!-- Main CSS File -->
@@ -196,7 +205,7 @@
 
         <div class="row gy-4">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3>Baby Dance - Dansuri și Fitness cu Bebeluși pentru Mămici după Naștere</h3>
+            <h3>Baby Dance - Dansuri și Fitness cu bebeluși pentru mămici după naștere</h3>
             <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="Baby Dance Program">
             <p>Baby Dance este locul ideal pentru mamele care doresc să-și recâștige forma fizică după naștere, într-un mod sigur și distractiv, împreună cu bebelușii lor. Programul nostru este gândit special pentru a te ajuta să te reîntorci în formă, chiar dacă nu ai mai făcut sport până acum.</p>
             <p>Vârsta recomandată pentru bebeluși este de la 2 luni până la un an, sau mai mult, dar până la 12 kg. Dacă bebelușul tău este mai mare, poți aduce jucării la antrenamente.</p>
@@ -228,6 +237,87 @@
 
     </section><!-- /About Section -->
 
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section">
+      <div class="container">
+        <h2>Întrebări Frecvente despre BabyDance</h2>
+
+        <!-- General Questions Section -->
+        <div class="accordion" id="generalAccordion">
+          <h3>Întrebări Generale</h3>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="generalQ1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#generalA1" aria-expanded="true" aria-controls="generalA1">
+                Micii au adormit în timp ce mergeam la antrenament, trebuie să îi trezesc?
+              </button>
+            </h2>
+            <div id="generalA1" class="accordion-collapse collapse show" aria-labelledby="generalQ1" data-bs-parent="#generalAccordion">
+              <div class="accordion-body">
+                Nu, nu trezim copiii. Punem căruciorul lângă intrarea în sală astfel încât mama să audă și să vadă copilul. Începem antrenamentul fără el și imediat ce se trezește, mama îl ia la ea.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="generalQ2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalA2" aria-expanded="false" aria-controls="generalA2">
+                Pot participa fără copil?
+              </button>
+            </h2>
+            <div id="generalA2" class="accordion-collapse collapse" aria-labelledby="generalQ2" data-bs-parent="#generalAccordion">
+              <div class="accordion-body">
+                Da! Puteți veni fără copil.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="generalQ3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalA3" aria-expanded="false" aria-controls="generalA3">
+                Copilul meu este mai mare, pot participa?
+              </button>
+            </h2>
+            <div id="generalA3" class="accordion-collapse collapse" aria-labelledby="generalQ3" data-bs-parent="#generalAccordion">
+              <div class="accordion-body">
+                Da, puteți participa, cu condiția să aduceți jucării sau alte lucruri care pot să-i capteze atenția.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sling Questions Section -->
+        <div class="accordion" id="slingAccordion">
+          <h3>Întrebări despre Slinguri</h3>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="slingQ1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#slingA1" aria-expanded="true" aria-controls="slingA1">
+                Nu am sling. E o problemă?
+              </button>
+            </h2>
+            <div id="slingA1" class="accordion-collapse collapse show" aria-labelledby="slingQ1" data-bs-parent="#slingAccordion">
+              <div class="accordion-body">
+                Dacă nu aveți sling, vă vom oferi unul în studio.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="slingQ2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#slingA2" aria-expanded="false" aria-controls="slingA2">
+                Copilul meu nu vrea să stea în sling, pot participa?
+              </button>
+            </h2>
+            <div id="slingA2" class="accordion-collapse collapse" aria-labelledby="slingQ2" data-bs-parent="#slingAccordion">
+              <div class="accordion-body">
+                Copiii se obișnuiesc cu slingurile, există o perioadă de adaptare. Se recomandă să așezați copilul în sling în momentul în care mama este în mișcare, de exemplu la o plimbare sau la dans. Dacă doar stați, adaptarea va fi foarte dificilă sau copilului nu-i va fi deloc interesant să stea acolo. Dar nu este necesar ca toți copiii să stea în slinguri în timpul activităților. Puteți așeza copilul pe podea și să-i dați jucării, să-l așezați pe covor sau să-l țineți într-un portbebe de la cărucior.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /FAQ Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -333,12 +423,12 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="fitnessQ2">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fitnessA2" aria-expanded="false" aria-controls="fitnessA2">
-                  Este sigur să fac fitness cu bebelușul în sistemul de purtare?
+                  La fitness copii tot sunt în sisteme de purtare?
                 </button>
               </h2>
               <div id="fitnessA2" class="accordion-collapse collapse" aria-labelledby="fitnessQ2" data-bs-parent="#fitnessAccordion">
                 <div class="accordion-body">
-                  Da, este absolut sigur. Bebelușul este poziționat ergonomic în "M-position", cea mai fiziologică poziție pentru coloana vertebrală a bebelușilor.
+                  La fitness copii sunt fie în brate, fie langa Dumneavoastră. In cazul că copilul Dumneavoastră este prea mic poate sa stea in purtător pentru copii.
                 </div>
               </div>
             </div>
@@ -534,6 +624,29 @@
 
       </section><!-- /FAQ Section -->
 
+
+      <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <iframe src="https://www.youtube.com/embed/gqj-93nTOiU" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NKG7uDq1uYg?si=qIiSK53JlbF0FlEf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DYLb-XWAS0U?si=0NUmh0Ny6mUCPH3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
@@ -671,6 +784,7 @@
       </div>
 
     </section><!-- /Portfolio Section -->
+
 
 <!--    &lt;!&ndash; Clients Section &ndash;&gt;-->
 <!--    <section id="clients" class="clients section">-->
