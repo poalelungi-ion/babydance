@@ -25,14 +25,42 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <style>
+
+      /* Button Styling */
+    .btn-get-started-1 {
+      background-color: #B3A6FF;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      display: inline-block;
+      text-align: center; /* Center text within the button */
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-get-started-1:hover {
+      background-color: #9A8BE6; /* Darken slightly on hover */
+    }
+
     /* Custom styles for the accordion */
     .accordion-button {
       border-radius: 8px;
     }
+      /* Centering the button */
+      .button-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 100vh; /* Full height viewport */
+      }
 
     /* Change the background color when the accordion is active */
     .accordion-button:not(.collapsed) {
       background-color: #B3A6FFFF;
+
       color: white;
     }
 
@@ -194,9 +222,8 @@
                 <a href="https://www.youtube.com/watch?v=gqj-93nTOiU" class="glightbox pulsating-play-btn"></a>
               </div>
             </div>
-          </div>
+          </div><a href="contact.html" class="btn-get-started-1" >Înscrie-te acum</a>
         </div>
-
       </div>
 
     </section><!-- /About Section -->
