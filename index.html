@@ -25,6 +25,32 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <style>
+    /* Customizing the carousel control arrows */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: transparent;
+      width: 40px;
+      height: 40px;
+
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '';
+      display: inline-block;
+      border: solid purple;
+      border-width: 0 4px 4px 0;
+      padding: 5px;
+    }
+
+    .carousel-control-prev-icon::before {
+      transform: rotate(135deg); /* Left arrow */
+    }
+
+    .carousel-control-next-icon::before {
+      transform: rotate(-45deg); /* Right arrow */
+    }
+
 
       /* Button Styling */
     .btn-get-started-1 {
@@ -637,16 +663,27 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/DYLb-XWAS0U?si=0NUmh0Ny6mUCPH3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
+
+        <!-- Previous control -->
         <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
+
+        <!-- Next control -->
         <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-
       </div>
+      <!-- JavaScript to disable auto-sliding -->
+      <script>
+        // Disable auto sliding
+        var portfolioCarousel = document.querySelector('#portfolioCarousel');
+        var carouselInstance = new bootstrap.Carousel(portfolioCarousel, {
+          interval: false, // Disable automatic cycling
+        });
+      </script>
 
       <!-- Testimonials Section -->
       <section id="testimonials" class="testimonials section">
