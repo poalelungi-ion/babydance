@@ -130,6 +130,37 @@
       <div class="container" data-aos="fade">
         <div class="row gy-5 gx-lg-5">
 
+
+
+          <!-- Calendars Section -->
+          <div class="col-lg-8">
+            <div class="info-item d-flex">
+
+              <div >
+                <button class=" btn-get-started-1 btn btn-primary me-2 " onclick="toggleCalendar('calendar1')">Botanica</button>
+                <button class="btn-get-started-1  btn btn-primary me-2" onclick="toggleCalendar('calendar2')">Buiucani</button>
+                <button class=" btn-get-started-1 btn btn-primary" onclick="toggleCalendar('calendar3')">Rascani</button>
+
+              </div>
+            </div><!-- End Info Item -->
+
+            <div id="calendar1" class="calendar-frame" style="display:none;">
+              <iframe src="https://koalendar.com/e/zapishis-na-trenirovki?embed=true" width="100%" height="600px" frameborder="0"></iframe>
+              <button class="btn btn-secondary mt-3" onclick="hideCalendar('calendar1')">Hide</button>
+            </div>
+
+            <div id="calendar2" class="calendar-frame" style="display:none;">
+              <iframe src="https://koalendar.com/e/zapishis-na-trenirovkiryshkanovka?embed=true" width="100%" height="800px" frameborder="0"></iframe>
+              <button class="btn btn-secondary mt-3" onclick="hideCalendar('calendar2')">Hide</button>
+            </div>
+
+            <div id="calendar3" class="calendar-frame" style="display:none;">
+              <iframe src="https://koalendar.com/e/zapishis-na-trenirovkibuyukany?embed=true" width="100%" height="800px" frameborder="0"></iframe>
+              <button class="btn btn-secondary mt-3" onclick="hideCalendar('calendar3')">Hide</button>
+            </div>
+          </div>
+          <!-- End Calendars Section -->
+
           <!-- Contact Information -->
           <div class="col-lg-4">
             <div class="info">
@@ -171,35 +202,6 @@
             </div>
           </div>
           <!-- End Contact Information -->
-
-          <!-- Calendars Section -->
-          <div class="col-lg-8">
-            <div class="info-item d-flex">
-
-              <div >
-                <button class=" btn-get-started-1 btn btn-primary me-2 " onclick="toggleCalendar('calendar1')">Botanica</button>
-                <button class="btn-get-started-1  btn btn-primary me-2" onclick="toggleCalendar('calendar2')">Buiucani</button>
-                <button class=" btn-get-started-1 btn btn-primary" onclick="toggleCalendar('calendar3')">Rascani</button>
-
-              </div>
-            </div><!-- End Info Item -->
-
-            <div id="calendar1" class="calendar-frame" style="display:none;">
-              <iframe src="https://koalendar.com/e/zapishis-na-trenirovki?embed=true" width="100%" height="600px" frameborder="0"></iframe>
-              <button class="btn btn-secondary mt-3" onclick="hideCalendar('calendar1')">Hide</button>
-            </div>
-
-            <div id="calendar2" class="calendar-frame" style="display:none;">
-              <iframe src="https://koalendar.com/e/zapishis-na-trenirovkiryshkanovka?embed=true" width="100%" height="800px" frameborder="0"></iframe>
-              <button class="btn btn-secondary mt-3" onclick="hideCalendar('calendar2')">Hide</button>
-            </div>
-
-            <div id="calendar3" class="calendar-frame" style="display:none;">
-              <iframe src="https://koalendar.com/e/zapishis-na-trenirovkibuyukany?embed=true" width="100%" height="800px" frameborder="0"></iframe>
-              <button class="btn btn-secondary mt-3" onclick="hideCalendar('calendar3')">Hide</button>
-            </div>
-          </div>
-          <!-- End Calendars Section -->
 
           <!-- CSS for Buttons (Embedded) -->
           <style>

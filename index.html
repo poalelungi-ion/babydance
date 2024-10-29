@@ -131,17 +131,47 @@
     <div class="topbar d-flex align-items-center light-background">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:babydancemoldova@mail.ru">babydancemoldova@mail.ru</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span onclick="window.location.href='tel:+37360838093'">+(373)60-83-80-93</span></i>
+          <i class="bi bi-envelope d-flex align-items-center">
+            <a href="mailto:babydancemoldova@mail.ru">babydancemoldova@mail.ru</a>
+          </i>
+          <i class="bi bi-phone d-flex align-items-center ms-4">
+            <span onclick="window.location.href='tel:+37360838093'">+(373)60-83-80-93</span>
+          </i>
         </div>
+
+        <div class="language-buttons d-flex align-items-center ms-4">
+          <button onclick="translatePage('ro')" class="btn btn-link">RO</button>
+          <button onclick="translatePage('ru')" class="btn btn-link">RU</button>
+          <button onclick="translatePage('en')" class="btn btn-link">EN</button>
+        </div>
+
         <div class="social-links d-none d-md-flex align-items-center">
-<!--          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>-->
-          <a href="https://www.facebook.com/profile.php?id=61550672456067&mibextid=LQQJ4d" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/babydancemoldova?igsh=MWVzZnV2amh0dHRvaA%3D%3D&utm_source=qr" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.tiktok.com/@babydancemoldova?_t=8q1Kyb9G8A9&_r=1" class="linkedin"><i class="bi bi-tiktok"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61550672456067&mibextid=LQQJ4d" class="facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/babydancemoldova?igsh=MWVzZnV2amh0dHRvaA%3D%3D&utm_source=qr" class="instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@babydancemoldova?_t=8q1Kyb9G8A9&_r=1" class="tiktok">
+            <i class="bi bi-tiktok"></i>
+          </a>
         </div>
       </div>
-    </div><!-- End Top Bar -->
+    </div>
+
+    <!-- Google Translate Element -->
+    <div id="google_translate_element" style="display:none;"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'ro',
+          includedLanguages: 'ro,ru,en',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+      }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
     <div class="branding d-flex align-items-cente">
 
@@ -878,6 +908,18 @@ Mă bucur că am fost parte din acest colectiv, chiar și pentru scurt timp. Mul
             </div>
           </div>
 
+
+          <!-- Follow Us -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Urmărește-ne</h4>
+            <ul>
+              <li><a href="https://www.facebook.com/profile.php?id=61550672456067&mibextid=LQQJ4d">Facebook</a></li>
+              <li><a href="https://www.instagram.com/babydancemoldova?igsh=MWVzZnV2amh0dHRvaA%3D%3D&utm_source=qr">Instagram</a></li>
+              <li><a href="https://www.tiktok.com/@babydancemoldova?_t=8q1Kyb9G8A9&_r=1">TikTok</a></li>
+            </ul>
+          </div>
+
+
           <!-- Useful Links -->
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Link-uri Utile</h4>
@@ -890,39 +932,6 @@ Mă bucur că am fost parte din acest colectiv, chiar și pentru scurt timp. Mul
             </ul>
           </div>
 
-          <!-- Our Services -->
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Serviciile Noastre</h4>
-            <ul>
-              <li><a href="#">Clase de Dans pentru Mămici și Bebeluși</a></li>
-              <li><a href="#">Sesiuni de Fitness Postnatal</a></li>
-              <li><a href="#">Consultanță Nutrițională</a></li>
-              <li><a href="#">Ședințe foto personalizate</a></li>
-              <li><a href="#">Antrenori Personali</a></li>
-            </ul>
-          </div>
-
-          <!-- Social Media and Extras -->
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Comunitatea Noastră</h4>
-            <ul>
-              <li><a href="#">Alătură-te Comunității</a></li>
-              <li><a href="#">Testimoniale Mămici</a></li>
-              <li><a href="#">Galerie Foto</a></li>
-              <li><a href="#">Evenimente și Workshop-uri</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </div>
-
-          <!-- Follow Us -->
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Urmărește-ne</h4>
-            <ul>
-              <li><a href="https://www.facebook.com/profile.php?id=61550672456067&mibextid=LQQJ4d">Facebook</a></li>
-              <li><a href="https://www.instagram.com/babydancemoldova?igsh=MWVzZnV2amh0dHRvaA%3D%3D&utm_source=qr">Instagram</a></li>
-              <li><a href="https://www.tiktok.com/@babydancemoldova?_t=8q1Kyb9G8A9&_r=1">TikTok</a></li>
-            </ul>
-          </div>
 
         </div>
       </div>
