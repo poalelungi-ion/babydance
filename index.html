@@ -126,84 +126,90 @@
 
 <body class="index-page">
 
-  <header id="header" class="header sticky-top">
-
-    <div class="topbar d-flex align-items-center light-background">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center">
-            <a href="mailto:babydancemoldova@mail.ru">babydancemoldova@mail.ru</a>
-          </i>
-          <i class="bi bi-phone d-flex align-items-center ms-4">
-            <span onclick="window.location.href='tel:+37360838093'">+(373)60-83-80-93</span>
-          </i>
-        </div>
-
-        <div class="language-buttons d-flex align-items-center ms-4">
-          <button onclick="translatePage('ro')" class="btn btn-link">RO</button>
-          <button onclick="translatePage('ru')" class="btn btn-link">RU</button>
-          <button onclick="translatePage('en')" class="btn btn-link">EN</button>
-        </div>
-
-        <div class="social-links d-none d-md-flex align-items-center">
-          <a href="https://www.facebook.com/profile.php?id=61550672456067&mibextid=LQQJ4d" class="facebook">
-            <i class="bi bi-facebook"></i>
-          </a>
-          <a href="https://www.instagram.com/babydancemoldova?igsh=MWVzZnV2amh0dHRvaA%3D%3D&utm_source=qr" class="instagram">
-            <i class="bi bi-instagram"></i>
-          </a>
-          <a href="https://www.tiktok.com/@babydancemoldova?_t=8q1Kyb9G8A9&_r=1" class="tiktok">
-            <i class="bi bi-tiktok"></i>
-          </a>
-        </div>
+<header id="header" class="header sticky-top">
+  <div class="topbar d-flex align-items-center light-background">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center">
+          <a href="mailto:babydancemoldova@mail.ru">babydancemoldova@mail.ru</a>
+        </i>
+        <i class="bi bi-phone d-flex align-items-center ms-4">
+          <span onclick="window.location.href='tel:+37360838093'">+(373)60-83-80-93</span>
+        </i>
       </div>
-    </div>
 
-    <!-- Google Translate Element -->
-    <div id="google_translate_element" style="display:none;"></div>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-          pageLanguage: 'ro',
-          includedLanguages: 'ro,ru,en',
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 'google_translate_element');
-      }
-    </script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <!-- Language Buttons -->
+      <div class="language-buttons d-flex align-items-center ms-4">
+        <button onclick="translatePage('ro')" class="btn btn-link">RO</button>
+        <button onclick="translatePage('ru')" class="btn btn-link">RU</button>
+        <button onclick="translatePage('en')" class="btn btn-link">EN</button>
+      </div>
 
-
-    <div class="branding d-flex align-items-cente">
-
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-<!--      <img src="assets/img/IMG_0174.png" alt="">-->
-         <h1 class="sitename"  style="font-family: 'Montserrat', sans-serif;
-            font-weight: 1000;
-            background-image: linear-gradient(45deg, #9e52f3, #a3c7ff);
-            -webkit-background-clip: text;
-            color: transparent;">
-           Baby Dance
-         </h1>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://www.facebook.com/profile.php?id=61550672456067&mibextid=LQQJ4d" class="facebook">
+          <i class="bi bi-facebook"></i>
         </a>
-
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="index.html" class="active">Home<br></a></li>
-            <li><a href="about.html">Despre Noi</a></li>
-            <li><a href="portfolio.html">Portofoliu</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
+        <a href="https://www.instagram.com/babydancemoldova?igsh=MWVzZnV2amh0dHRvaA%3D%3D&utm_source=qr" class="instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@babydancemoldova?_t=8q1Kyb9G8A9&_r=1" class="tiktok">
+          <i class="bi bi-tiktok"></i>
+        </a>
       </div>
-
     </div>
+  </div>
 
-  </header>
+  <div class="branding d-flex align-items-center">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename" style="font-family: 'Montserrat', sans-serif; font-weight: 1000; background-image: linear-gradient(45deg, #9e52f3, #a3c7ff); -webkit-background-clip: text; color: transparent;">
+          Baby Dance
+        </h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home<br></a></li>
+          <li><a href="about.html">Despre Noi</a></li>
+          <li><a href="portfolio.html">Portofoliu</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Google Translate Element (Hidden) -->
+<div id="google_translate_element" style="display:none;"></div>
+
+<!-- Google Translate Initialization Script -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'ro',
+      includedLanguages: 'ro,ru,en',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- JavaScript for Triggering Language Switch -->
+<script>
+  function translatePage(language) {
+    var googleTranslateDropdown = document.querySelector('.goog-te-combo');
+    if (googleTranslateDropdown) {
+      googleTranslateDropdown.value = language;
+      googleTranslateDropdown.dispatchEvent(new Event('change'));
+    }
+  }
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
 
   <main class="main">
 
@@ -293,6 +299,8 @@
 
     </section><!-- /About Section -->
 
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-cea7bf5a-207e-496e-9440-8ecfbeb8115b" data-elfsight-app-lazy></div>
     <!-- FAQ Section -->
     <section id="faq" class="faq section">
       <div class="container">
