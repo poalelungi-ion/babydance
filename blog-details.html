@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Blog Details - Flattern Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Baby Dance Moldova - Program de dans și fitness pentru mămici cu bebeluși, conceput pentru a te ajuta să te reîntorci în formă după naștere, într-un mod sigur și distractiv. Alătură-te acum comunității Baby Dance!">
+  <meta name="keywords" content="Baby Dance, dansuri mămici, fitness cu bebeluși, Moldova, dans pentru mame, antrenamente postnatale, dans ergonomic, activități cu bebeluși, mămici active, recuperare după naștere, dans și fitness Moldova">
+
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -61,7 +62,7 @@
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Flattern</h1>
+          <h1 class="sitename notranslate">Flattern</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -71,7 +72,6 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
@@ -91,9 +91,29 @@
               </ul>
             </li>
             <li><a href="contact.html">Contact</a></li>
+            <li>
+              <!-- Google Translate Dropdown -->
+              <div id="google_translate_element"></div>
+            </li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
+
+        <script type="text/javascript">
+          // Function to initialize Google Translate widget with language options
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+              pageLanguage: 'ro', // Default page language is Romanian
+              includedLanguages: 'ro,ru,en', // Languages available in the dropdown (Romanian, Russian, English)
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+              autoDisplay: false // Disable automatic display of translate toolbar
+            }, 'google_translate_element');
+          }
+        </script>
+
+        <!-- Load Google Translate Script -->
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
       </div>
 
@@ -106,7 +126,7 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Blog Details</h1>
+        <h1 class="mb-2 mb-lg-0">Blog Details </h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -472,61 +492,43 @@
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
+
+          <!-- Business Information -->
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">Flattern</span>
+              <span class="sitename">BabyDance Moldova</span>
             </a>
             <div class="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-              <p><strong>Email:</strong> <span>info@example.com</span></p>
+
+              <p class="mt-3"><strong>Telefon:</strong> <span onclick="window.location.href='tel:+37360838093'">+(373)60-83-80-93</span></p>
+              <p><strong>Email:</strong> <span>babydancemoldova@mail.ru</span></p>
             </div>
           </div>
 
+
+          <!-- Follow Us -->
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Urmărește-ne</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61550672456067&mibextid=LQQJ4d">Facebook</a></li>
+              <li><a href="https://www.instagram.com/babydancemoldova?igsh=MWVzZnV2amh0dHRvaA%3D%3D&utm_source=qr">Instagram</a></li>
+              <li><a href="https://www.tiktok.com/@babydancemoldova?_t=8q1Kyb9G8A9&_r=1">TikTok</a></li>
             </ul>
           </div>
 
+
+          <!-- Useful Links -->
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
+            <h4>Link-uri Utile</h4>
             <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
+              <li><a href="#">Acasă</a></li>
+              <li><a href="#">Despre Noi</a></li>
+              <li><a href="#">Servicii</a></li>
+              <li><a href="#">Termeni și condiții</a></li>
+              <li><a href="#">Politica de confidențialitate</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Hic solutasetp</h4>
-            <ul>
-              <li><a href="#">Molestiae accusamus iure</a></li>
-              <li><a href="#">Excepturi dignissimos</a></li>
-              <li><a href="#">Suscipit distinctio</a></li>
-              <li><a href="#">Dilecta</a></li>
-              <li><a href="#">Sit quas consectetur</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Nobis illum</h4>
-            <ul>
-              <li><a href="#">Ipsam</a></li>
-              <li><a href="#">Laudantium dolorum</a></li>
-              <li><a href="#">Dinera</a></li>
-              <li><a href="#">Trodelas</a></li>
-              <li><a href="#">Flexo</a></li>
-            </ul>
-          </div>
 
         </div>
       </div>
@@ -537,28 +539,24 @@
 
         <div class="d-flex flex-column align-items-center align-items-lg-start">
           <div>
-            © Copyright <strong><span>MyWebsite</span></strong>. All Rights Reserved
+            © Copyright <strong><span>BabyDance Moldova</span></strong>. All Rights Reserved
           </div>
           <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            <!-- You can add credits or extra notes here -->
           </div>
         </div>
 
         <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61550672456067&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/babydancemoldova?igsh=MWVzZnV2amh0dHRvaA%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.tiktok.com/@babydancemoldova?_t=8q1Kyb9G8A9&_r=1"><i class="bi bi-tiktok"></i></a>
         </div>
 
       </div>
     </div>
 
   </footer>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Baby Dance</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Baby Dance Moldova - Program de dans și fitness pentru mămici cu bebeluși, conceput pentru a te ajuta să te reîntorci în formă după naștere, într-un mod sigur și distractiv. Alătură-te acum comunității Baby Dance!">
+  <meta name="keywords" content="Baby Dance, dansuri mămici, fitness cu bebeluși, Moldova, dans pentru mame, antrenamente postnatale, dans ergonomic, activități cu bebeluși, mămici active, recuperare după naștere, dans și fitness Moldova">
+
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -55,7 +56,7 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!--      <img src="assets/img/IMG_0174.png" alt="">-->
-        <h1 class="sitename"  style="font-family: 'Montserrat', sans-serif;
+        <h1 class="sitename notranslate"  style="font-family: 'Montserrat', sans-serif;
             font-weight: 1000;
             background-image: linear-gradient(45deg, #9e52f3, #a3c7ff);
             -webkit-background-clip: text;
@@ -66,14 +67,36 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" >Home<br></a></li>
+          <li><a href="index.html">Pagina Principala<br></a></li>
           <li><a href="about.html">Despre Noi</a></li>
-          <li><a href="portfolio.html">Portofoliu</a></li>
-          <li><a href="blog.html" class="active">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="fitness.html">Fitness</a></li>
+          <li><a href="dance.html">Dansuri</a></li>
+          <li><a href="testimonials.html">Recenzii</a></li>
+          <li><a href="blog.html" class="active">Blogul</a></li>
+          <li><a href="contact.html">Contacte</a></li>
+          <li>
+            <!-- Google Translate Dropdown -->
+            <div id="google_translate_element"></div>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <script type="text/javascript">
+        // Function to initialize Google Translate widget with language options
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({
+            pageLanguage: 'ro', // Default page language is Romanian
+            includedLanguages: 'ro,ru,en', // Languages available in the dropdown (Romanian, Russian, English)
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false // Disable automatic display of translate toolbar
+          }, 'google_translate_element');
+        }
+      </script>
+
+      <!-- Load Google Translate Script -->
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
     </div>
 
@@ -125,6 +148,18 @@
           </div>
         </div>
 
+
+        <!-- Follow Us -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Urmărește-ne</h4>
+          <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=61550672456067&mibextid=LQQJ4d">Facebook</a></li>
+            <li><a href="https://www.instagram.com/babydancemoldova?igsh=MWVzZnV2amh0dHRvaA%3D%3D&utm_source=qr">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@babydancemoldova?_t=8q1Kyb9G8A9&_r=1">TikTok</a></li>
+          </ul>
+        </div>
+
+
         <!-- Useful Links -->
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Link-uri Utile</h4>
@@ -137,39 +172,6 @@
           </ul>
         </div>
 
-        <!-- Our Services -->
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Serviciile Noastre</h4>
-          <ul>
-            <li><a href="#">Clase de Dans pentru Mămici și Bebeluși</a></li>
-            <li><a href="#">Sesiuni de Fitness Postnatal</a></li>
-            <li><a href="#">Consultanță Nutrițională</a></li>
-            <li><a href="#">Ședințe foto personalizate</a></li>
-            <li><a href="#">Antrenori Personali</a></li>
-          </ul>
-        </div>
-
-        <!-- Social Media and Extras -->
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Comunitatea Noastră</h4>
-          <ul>
-            <li><a href="#">Alătură-te Comunității</a></li>
-            <li><a href="#">Testimoniale Mămici</a></li>
-            <li><a href="#">Galerie Foto</a></li>
-            <li><a href="#">Evenimente și Workshop-uri</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-
-        <!-- Follow Us -->
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Urmărește-ne</h4>
-          <ul>
-            <li><a href="https://www.facebook.com/profile.php?id=61550672456067&mibextid=LQQJ4d">Facebook</a></li>
-            <li><a href="https://www.instagram.com/babydancemoldova?igsh=MWVzZnV2amh0dHRvaA%3D%3D&utm_source=qr">Instagram</a></li>
-            <li><a href="https://www.tiktok.com/@babydancemoldova?_t=8q1Kyb9G8A9&_r=1">TikTok</a></li>
-          </ul>
-        </div>
 
       </div>
     </div>
@@ -197,6 +199,7 @@
   </div>
 
 </footer>
+
 
 
   <!-- Scroll Top -->

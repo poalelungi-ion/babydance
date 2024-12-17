@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Baby Dance</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Baby Dance Moldova - Program de dans și fitness pentru mămici cu bebeluși, conceput pentru a te ajuta să te reîntorci în formă după naștere, într-un mod sigur și distractiv. Alătură-te acum comunității Baby Dance!">
+  <meta name="keywords" content="Baby Dance, dansuri mămici, fitness cu bebeluși, Moldova, dans pentru mame, antrenamente postnatale, dans ergonomic, activități cu bebeluși, mămici active, recuperare după naștere, dans și fitness Moldova">
+
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -51,6 +52,61 @@
       text-align: center; /* Center align the button group */
       margin-top: 20px; /* Add margin on top of the button group */
     }
+    /* Hiding Google Translate top banner */
+    .goog-te-banner-frame {
+      display: none !important;
+    }
+
+    /* Remove the Google Translate badge */
+    .goog-te-gadget-icon {
+      display: none !important;
+    }
+
+    /* Custom styling for the translate dropdown */
+    #google_translate_element select {
+      background-color: #ca60da;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      outline: none;
+      appearance: none; /* Remove default dropdown arrow */
+      text-align: center;
+      cursor: pointer;
+    }
+
+    /* Optional: Customizing the dropdown on hover */
+    #google_translate_element select:hover {
+      background-color: #9A8BE6; /* Darken on hover */
+    }
+
+    /* Optional: Add custom arrow to the dropdown */
+    #google_translate_element select::after {
+      content: '▼';
+      font-size: 18px;
+      padding-left: 10px;
+    }
+
+    /* Style for the navmenu (customize if needed) */
+    #navmenu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #navmenu li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    #navmenu a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
   </style>
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -83,7 +139,7 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!--      <img src="assets/img/IMG_0174.png" alt="">-->
-        <h1 class="sitename"  style="font-family: 'Montserrat', sans-serif;
+        <h1 class="sitename notranslate"  style="font-family: 'Montserrat', sans-serif;
             font-weight: 1000;
             background-image: linear-gradient(45deg, #9e52f3, #a3c7ff);
             -webkit-background-clip: text;
@@ -94,15 +150,35 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" >Home<br></a></li>
+          <li><a href="index.html">Pagina Principala</a></li>
           <li><a href="about.html">Despre Noi</a></li>
-
-          <li><a href="portfolio.html">Portofoliu</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="fitness.html">Fitness</a></li>
+          <li><a href="dance.html">Dansuri</a></li>
+          <li><a href="testimonials.html">Recenzii</a></li>
+          <li><a href="blog.html">Blogul</a></li>
+          <li><a href="contact.html" class="active">Contacte</a></li>
+          <li>
+            <!-- Google Translate Dropdown -->
+            <div id="google_translate_element"></div>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <script type="text/javascript">
+        // Function to initialize Google Translate widget with language options
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({
+            pageLanguage: 'ro', // Default page language is Romanian
+            includedLanguages: 'ro,ru,en', // Languages available in the dropdown (Romanian, Russian, English)
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false // Disable automatic display of translate toolbar
+          }, 'google_translate_element');
+        }
+      </script>
+
+      <!-- Load Google Translate Script -->
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     </div>
 
@@ -117,10 +193,7 @@
       <div class="container d-lg-flex justify-content-between align-items-center">
         <h1 class="mb-2 mb-lg-0">Contact</h1>
         <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Contact</li>
-          </ol>
+
         </nav>
       </div>
     </div><!-- End Page Title -->
@@ -133,36 +206,16 @@
 
 
           <!-- Calendars Section -->
-          <div class="col-lg-8">
-            <div class="info-item d-flex">
+          <div class="col-lg-4">
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-ec018a2f-e877-45fe-a4c9-bf8b5ab8ac7c" data-elfsight-app-lazy></div>
 
-              <div >
-                <button class=" btn-get-started-1 btn btn-primary me-2 " onclick="toggleCalendar('calendar1')">Botanica</button>
-                <button class="btn-get-started-1  btn btn-primary me-2" onclick="toggleCalendar('calendar2')">Buiucani</button>
-                <button class=" btn-get-started-1 btn btn-primary" onclick="toggleCalendar('calendar3')">Rascani</button>
 
-              </div>
-            </div><!-- End Info Item -->
-
-            <div id="calendar1" class="calendar-frame" style="display:none;">
-              <iframe src="https://koalendar.com/e/zapishis-na-trenirovki?embed=true" width="100%" height="600px" frameborder="0"></iframe>
-              <button class="btn btn-secondary mt-3" onclick="hideCalendar('calendar1')">Hide</button>
-            </div>
-
-            <div id="calendar2" class="calendar-frame" style="display:none;">
-              <iframe src="https://koalendar.com/e/zapishis-na-trenirovkiryshkanovka?embed=true" width="100%" height="800px" frameborder="0"></iframe>
-              <button class="btn btn-secondary mt-3" onclick="hideCalendar('calendar2')">Hide</button>
-            </div>
-
-            <div id="calendar3" class="calendar-frame" style="display:none;">
-              <iframe src="https://koalendar.com/e/zapishis-na-trenirovkibuyukany?embed=true" width="100%" height="800px" frameborder="0"></iframe>
-              <button class="btn btn-secondary mt-3" onclick="hideCalendar('calendar3')">Hide</button>
-            </div>
           </div>
           <!-- End Calendars Section -->
 
           <!-- Contact Information -->
-          <div class="col-lg-4">
+          <div class="col-lg-8">
             <div class="info">
               <h3>Contactează-ne</h3>
               <p>Alătură-te programului Baby Dance Moldova și descoperă bucuria dansului și fitness-ului alături de bebelușul tău!</p>
@@ -203,62 +256,13 @@
           </div>
           <!-- End Contact Information -->
 
-          <!-- CSS for Buttons (Embedded) -->
-          <style>
-            .calendar-controls button {
-              font-size: 16px;
-              padding: 10px 20px;
-            }
 
-            .calendar-frame button {
-              font-size: 14px;
-              padding: 8px 16px;
-            }
-          </style>
-
-          <!-- JavaScript Functions -->
-          <script>
-            // Toggle function for calendar frames
-            function toggleCalendar(calendarId) {
-              var calendars = document.querySelectorAll('.calendar-frame');
-              calendars.forEach(function(calendar) {
-                calendar.style.display = 'none';
-              });
-              document.getElementById(calendarId).style.display = 'block';
-            }
-
-            // Hide function for calendar frames
-            function hideCalendar(calendarId) {
-              document.getElementById(calendarId).style.display = 'none';
-            }
-          </script>
 
 
         </div>
       </div>
     </section>
 
-    <script>
-      // Show calendar1 on page load
-      document.addEventListener('DOMContentLoaded', function() {
-        toggleCalendar('calendar1');
-      });
-      function toggleCalendar(calendarId) {
-        // Hide all calendars first
-        var calendars = document.querySelectorAll('.calendar-frame');
-        calendars.forEach(function (calendar) {
-          calendar.style.display = 'none';
-        });
-
-        // Show the selected calendar
-        document.getElementById(calendarId).style.display = 'block';
-      }
-
-      function hideCalendar(calendarId) {
-        // Hide the currently shown calendar
-        document.getElementById(calendarId).style.display = 'none';
-      }
-    </script>
 
 
     </div>
@@ -289,10 +293,23 @@
             <span class="sitename">BabyDance Moldova</span>
           </a>
           <div class="footer-contact pt-3">
+
             <p class="mt-3"><strong>Telefon:</strong> <span onclick="window.location.href='tel:+37360838093'">+(373)60-83-80-93</span></p>
             <p><strong>Email:</strong> <span>babydancemoldova@mail.ru</span></p>
           </div>
         </div>
+
+
+        <!-- Follow Us -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Urmărește-ne</h4>
+          <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=61550672456067&mibextid=LQQJ4d">Facebook</a></li>
+            <li><a href="https://www.instagram.com/babydancemoldova?igsh=MWVzZnV2amh0dHRvaA%3D%3D&utm_source=qr">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@babydancemoldova?_t=8q1Kyb9G8A9&_r=1">TikTok</a></li>
+          </ul>
+        </div>
+
 
         <!-- Useful Links -->
         <div class="col-lg-2 col-md-3 footer-links">
@@ -306,39 +323,6 @@
           </ul>
         </div>
 
-        <!-- Our Services -->
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Serviciile Noastre</h4>
-          <ul>
-            <li><a href="#">Clase de Dans pentru Mămici și Bebeluși</a></li>
-            <li><a href="#">Sesiuni de Fitness Postnatal</a></li>
-            <li><a href="#">Consultanță Nutrițională</a></li>
-            <li><a href="#">Ședințe foto personalizate</a></li>
-            <li><a href="#">Antrenori Personali</a></li>
-          </ul>
-        </div>
-
-        <!-- Social Media and Extras -->
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Comunitatea Noastră</h4>
-          <ul>
-            <li><a href="#">Alătură-te Comunității</a></li>
-            <li><a href="#">Testimoniale Mămici</a></li>
-            <li><a href="#">Galerie Foto</a></li>
-            <li><a href="#">Evenimente și Workshop-uri</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-
-        <!-- Follow Us -->
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Urmărește-ne</h4>
-          <ul>
-            <li><a href="https://www.facebook.com/profile.php?id=61550672456067&mibextid=LQQJ4d">Facebook</a></li>
-            <li><a href="https://www.instagram.com/babydancemoldova?igsh=MWVzZnV2amh0dHRvaA%3D%3D&utm_source=qr">Instagram</a></li>
-            <li><a href="https://www.tiktok.com/@babydancemoldova?_t=8q1Kyb9G8A9&_r=1">TikTok</a></li>
-          </ul>
-        </div>
 
       </div>
     </div>
@@ -366,6 +350,7 @@
   </div>
 
 </footer>
+
 
 
   <!-- Scroll Top -->
